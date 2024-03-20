@@ -1,4 +1,16 @@
-.darkMode{
-    background-color: #111;
-    color: rgb(156, 156, 156);
+.DarkModeSideBar{
+    background-color: #28273f;
+    color: #d3dadd;
+}
+.DarkMode{
+    background-color: #191928;
+    color: white;
+}
+.LightModeSideBar {
+    background-color: white;
+    color: black;
+}
+.LightMode{
+    background-color: #f4f7fe;
+    color: black;
 }

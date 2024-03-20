@@ -24,8 +24,9 @@ const NavBar = () => {
     }
     return (
         <div className='flex items-center justify-end'>
-            <div className='h-12 border-gray-300 flex items-center text-sm text-gray-600 m-3 py-6 px-2 bg-white border-b rounded-full'>
-                <div className='bg-[#f4f7fe] flex items-center p-2 rounded-full mr-2'>
+            <div className='h-12 border-gray-300 flex items-center text-sm text-gray-600 m-3 py-6 px-2 bg-white border-b rounded-full' 
+                onMouseLeave={handleInputClick}>
+                <div className='bg-[#f4f7fe] flex items-center p-2 rounded-full mr-2' >
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                     <input 
                         type="text" 

@@ -22,16 +22,16 @@ function App() {
       <div className='flex'>
         <BrowserRouter>
           <SideBar/>
-          <Routes>
-            <Route>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/user" element={<User/>}/>
-              <Route path="/movie" element={<Movie/>}/>
-              <Route path="/category" element={<Category/>}/>
-              <Route path="/actor" element={<Actor/>}/>
-              <Route path="/director" element={<Director/>}/>
-            </Route>
-          </Routes>
+            <Routes>
+              <Route>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/user" element={<User/>}/>
+                <Route path="/movie" element={<Movie/>}/>
+                <Route path="/category" element={<Category/>}/>
+                <Route path="/actor" element={<Actor/>}/>
+                <Route path="/director" element={<Director/>}/>
+              </Route>
+            </Routes>
         </BrowserRouter>
       </div>
     </DarkModeContextProvider>
