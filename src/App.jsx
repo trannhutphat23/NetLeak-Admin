@@ -6,17 +6,14 @@ import Category from './Pages/Category/category.jsx';
 import Actor from './Pages/Actor/actor.jsx';
 import Director from './Pages/Director/director.jsx';
 import Home from './Pages/Home/home.jsx';
+import AddUser from './Pages/User/addUser.jsx';
 import {
   BrowserRouter,
   Route,
   Routes,
 } from "react-router-dom";
-import { useContext } from "react";
-import { DarkModeContext } from "./context/darkModeContext";
 import { DarkModeContextProvider } from './context/darkModeContext';
 function App() {
-  const { darkMode } = useContext(DarkModeContext);
-  console.log(darkMode);
   return (
     <DarkModeContextProvider>
       <div className='flex'>
@@ -26,6 +23,7 @@ function App() {
               <Route>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/user" element={<User/>}/>
+                <Route path="/user/add" element={<AddUser/>}/>
                 <Route path="/movie" element={<Movie/>}/>
                 <Route path="/category" element={<Category/>}/>
                 <Route path="/actor" element={<Actor/>}/>
