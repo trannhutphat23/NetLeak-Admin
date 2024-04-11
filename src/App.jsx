@@ -1,4 +1,5 @@
 import './App.css'
+// import { useState } from 'react';
 import SideBar from './Pages/SideBar/sideBar.jsx';
 import User from './Pages/User/user.jsx';
 import Movie from './Pages/Movie/movie.jsx';
@@ -7,6 +8,7 @@ import Actor from './Pages/Actor/actor.jsx';
 import Director from './Pages/Director/director.jsx';
 import Home from './Pages/Home/home.jsx';
 import AddUser from './Pages/User/addUser.jsx';
+import ActorDetail from './Pages/Actor/actorDetail.jsx';
 import {
   BrowserRouter,
   Route,
@@ -27,6 +29,7 @@ function App() {
                 <Route path="/movie" element={<Movie/>}/>
                 <Route path="/category" element={<Category/>}/>
                 <Route path="/actor" element={<Actor/>}/>
+                <Route path="/actor/detail" element={<ActorDetail/>}/>
                 <Route path="/director" element={<Director/>}/>
               </Route>
             </Routes>

@@ -23,7 +23,6 @@ const AddUser = () => {
     const handleChange = (event) => {
         setValue(event.target.value);
     };
-    console.log(value)
     return (
         <div className={`w-screen ${darkMode ?  'DarkMode' : 'LightMode'}`}>
             <NavBar/>

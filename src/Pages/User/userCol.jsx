@@ -1,6 +1,5 @@
-/* eslint-disable react/jsx-key */
 const columns = [
-    { field: 'id', headerName: 'ID', width: 70 },
+    { field: 'id', headerName: 'ID', width: 80 },
     {
         field: 'name',
         headerName: 'Name',
@@ -11,7 +10,7 @@ const columns = [
         field: 'email',
         headerName: 'Email',
         sortable: false,
-        width: 220,
+        width: 240,
     },
     {
         field: 'age',

@@ -13,7 +13,7 @@ const SideBar = () => {
     const [ishovered, setIshoverd] = useState(0);
     const { darkMode } = useContext(DarkModeContext);
     return (
-        <div className={`${darkMode ?  'DarkModeSideBar' : 'LightModeSideBar'} h-screen w-1/5`}>
+        <div className={`${darkMode ?  'DarkModeSideBar' : 'LightModeSideBar'} h-screen min-w-[200px] lg:w-[20%]`}>
             <div className='py-4 font-bold text-center m-4'>
                 <Link to="/" >
                     <span>NETLEAK DASHBOARD</span>
